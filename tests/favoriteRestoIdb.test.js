@@ -8,5 +8,5 @@ describe('Favorite Resto Idb Contract Test Implementation', () => {
     });
   });
  
-  itActsAsFavoriteRestoModel(FavoriteRestoIdb);
+  itActsAsFavoriteRestoModel(FavoriteRestoIdb); 
 });

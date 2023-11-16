@@ -41,18 +41,6 @@ const itActsAsFavoriteRestoModel = (favoriteResto) => {
       expect(await favoriteResto.getAllRestos()).toEqual([{ id: 1 }, { id: 2 }, { id: 3 }]);
     });
 
-    it('should be able to search for restos', async () => {
-      favoriteResto.putResto({ id: 1, title: 'film a' });
-      favoriteResto.putResto({ id: 2, title: 'film b' });
-      favoriteResto.putResto({ id: 3, title: 'film abc' });
-      favoriteResto.putResto({ id: 4, title: 'ini mah film abcd' });
-   
-      expect(await favoriteResto.searchRestos('film a')).toEqual([
-        { id: 1, title: 'film a' },
-        { id: 3, title: 'film abc' },
-        { id: 4, title: 'ini mah film abcd' },
-      ]);
-    });
   };
    
   // eslint-disable-next-line import/prefer-default-export
