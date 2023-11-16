@@ -1,11 +1,11 @@
-import RestoDbSource from "../../data/restodb-source";
-import { createRestoItemTemplate } from "../templates/template-creator";
+import RestoDbSource from '../../data/restodb-source';
+import { createRestoItemTemplate } from '../templates/template-creator';
 
 const Home = {
   async render() {
     return `
     <div class="content">
-    <h2 class="content__heading">Menu</h2>
+    <h2 class="content__heading">List Restaurant</h2>
     <div id="restos" class="restos">
     </div>
   </div>
